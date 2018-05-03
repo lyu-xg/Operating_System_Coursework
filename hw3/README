@@ -1,0 +1,26 @@
+- Kindly run `make test` to run the test case.
+- Kindly run `make libmalloc.so` to compile the malloc library, same for `*.o` files.
+
+- Since time is not our concern, everything is stored in a giant "linked buddy list". Most obvious advantage is the ease of adding more and more blocks when needed.
+- Each time we need to ask kernel to extend our heap, we ask for size of power of 2 (as well as multiple of page_size) to create a new buddy node.
+- Buddy node headers reside on each of actual data segments, takes 8 bytes; therefore, the smallest segment becomes 16 bytes.
+- When malloc query comes in, 
+
+- The challenge: Finding Buddy: finding buddy for a given block is particularly tricky since the original tree structure was not maintained by any data structure that we can look up. Upon looking at neighboring blocks of same size, no matter occupied or not, it is not sufficient information to do merging operation; since we cannot determine the block needs a left buddy or a right buddy.
+
+- Before going into my solution to this issue, there are invariants we need to talk about: 
+
+	1. a `magic block` is a memory block that is aligned with page limit and managed by buddy system
+	2. when extending heap, we make sure all the blocks we use are `magic blocks` even if that means we are wasting some space. 
+	3. we hence use the word `block` to indicate `magic block`
+	4. blocks can be arbitrary huge, they break down half each time.
+	5. a block can be merged with its buddy when its size is less than system page size.
+	6. yes, that means huge blocks (which consists of multiple pages) cannot be merged back into one whole block once broken down.
+
+- To solve this left/right buddy problem, we first calculate the `offset` of buddy-seeking block from its page-limit-sized parent (if any) using `addr % page_size`. We then check whether `offset` is a multiple of size of immediate parent of the buddy-seeking block. If it is, the buddy is a left buddy hence should be seeking right, if it is not, the buddy is a right buddy hence should be seeking left. The correctness is easily provable so omitted here.
+
+- One obvious limitation of this method is that we have no way of finding buddies for blocks with sizes which are greater than or equal to page size. Therefore, we do not merge big blocks.
+
+- One potential flaw: free() function has two parameter checks, one checks for whether the given pointer is in range of the total allocated heap space, one checks for whether the given pointer (when subtracted header size) is an multiplication of 16 (the minimum) block size. However, even when these two checks passes, we have no way of telling whether the pointer is legit since given pointer can be pointing to the middle of a bigger block.
+- `realloc` currently handles all queries by mallocing a new addr and freeing old addr. It would be a more efficient implementation if we just find buddy first and unite with buddy whenever possible before relocating data.
+- Works for bash, zsh, git etc. Does not work for VIM. My temporary theory is that VIM is doing `fork`.

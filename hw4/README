@@ -1,0 +1,31 @@
+- Kindly run `make` to run the test case.
+- Kindly run `make lib` to compile the malloc library, 
+- Kindly run `make <filename>.o` to compile each file individually.
+
+- Since time is not our concern, every arena has one and only one "linked buddy list". Most obvious advantage is the ease of adding more and more blocks when needed.
+- Buddy node headers reside on each of actual data segments, takes 32 bytes; therefore, the smallest segment becomes 64 bytes.
+
+- The challenge: Finding Buddy: finding buddy for a given block is particularly tricky since the original tree structure was not maintained by any data structure that we can look up. Upon looking at neighboring blocks of same size, no matter occupied or not, it is not sufficient information to do merging operation; since we cannot determine the block needs a left buddy or a right buddy.
+
+- Before going into my solution to this issue, there are invariants we need to talk about: 
+
+	1. a `magic block` is a memory block that is aligned with page limit and managed by buddy system
+	2. when extending heap, we make sure all the blocks we use are `magic blocks` even if that means we are wasting some space. 
+	3. we hence use the word `block` to indicate `magic block`
+	4. blocks can be arbitrary huge, they break down half each time.
+	5. a block can be merged with its buddy when its size is less than system page size.
+	6. yes, that means huge blocks (which consists of multiple pages) cannot be merged back into one whole block once broken down.
+
+- To solve this left/right buddy problem, we first calculate the `offset` of buddy-seeking block from its page-limit-sized parent (if any) using `addr % page_size`. We then check whether `offset` is a multiple of size of immediate parent of the buddy-seeking block. If it is, the buddy is a left buddy hence should be seeking right, if it is not, the buddy is a right buddy hence should be seeking left. The correctness is easily provable so omitted here.
+
+- One obvious limitation of this method is that we have no way of finding buddies for blocks with sizes which are greater than or equal to page size. Therefore, we do not merge big blocks.
+
+- potiential improvement: `realloc` currently handles all queries by mallocing a new addr and freeing old addr. It would be a more efficient implementation if we just find buddy first and unite with buddy whenever possible before relocating data.
+
+- In order to handle fork, we utilize `pthread_atfork` to register calls to make sure to acquire locks for before fork and release the locks after fork.
+
+- changes made to the original structure: the list is no longer maintain sorted by address. 
+
+- Arena distribution: each thread was assigned to an Arena when called malloc for the first time. Kept by an internal counter, arena is assigned sequentially, when reached last arena, just loop back to the first arena. With this design, we maximize uniformity in terms of disPtributing arenas to threads.
+
+- Arena Management lock and Arena locks: Each arena has its own for mutual exclusion of corresponding threads; there is another lock, however, for manipulating the arena array (called `arena_list_lock` in `utils.c`). Arena array is hidden inside utils, hence not exposed as an API.

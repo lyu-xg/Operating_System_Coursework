@@ -1,0 +1,165 @@
+00400000-00402000 r-xp 00000000 08:01 3555893                            /usr/lib/dleyna-renderer/dleyna-renderer-service
+00601000-00602000 r--p 00001000 08:01 3555893                            /usr/lib/dleyna-renderer/dleyna-renderer-service
+00602000-00603000 rw-p 00002000 08:01 3555893                            /usr/lib/dleyna-renderer/dleyna-renderer-service
+00fab000-0100d000 rw-p 00000000 00:00 0                                  [heap]
+7f2230000000-7f2230022000 rw-p 00000000 00:00 0 
+7f2230022000-7f2234000000 ---p 00000000 00:00 0 
+7f2238000000-7f2238022000 rw-p 00000000 00:00 0 
+7f2238022000-7f223c000000 ---p 00000000 00:00 0 
+7f223d290000-7f223d291000 ---p 00000000 00:00 0 
+7f223d291000-7f223da91000 rw-p 00000000 00:00 0 
+7f223da91000-7f223da94000 r-xp 00000000 08:01 528990                     /usr/lib/x86_64-linux-gnu/dleyna-1.0/connectors/libdleyna-connector-dbus.so
+7f223da94000-7f223dc93000 ---p 00003000 08:01 528990                     /usr/lib/x86_64-linux-gnu/dleyna-1.0/connectors/libdleyna-connector-dbus.so
+7f223dc93000-7f223dc94000 r--p 00002000 08:01 528990                     /usr/lib/x86_64-linux-gnu/dleyna-1.0/connectors/libdleyna-connector-dbus.so
+7f223dc94000-7f223dc95000 rw-p 00003000 08:01 528990                     /usr/lib/x86_64-linux-gnu/dleyna-1.0/connectors/libdleyna-connector-dbus.so
+7f223dc95000-7f223dc96000 ---p 00000000 00:00 0 
+7f223dc96000-7f223e496000 rw-p 00000000 00:00 0                          [stack:2480]
+7f223e496000-7f223e4bc000 r-xp 00000000 08:01 2884094                    /lib/x86_64-linux-gnu/libpng12.so.0.50.0
+7f223e4bc000-7f223e6bb000 ---p 00026000 08:01 2884094                    /lib/x86_64-linux-gnu/libpng12.so.0.50.0
+7f223e6bb000-7f223e6bc000 r--p 00025000 08:01 2884094                    /lib/x86_64-linux-gnu/libpng12.so.0.50.0
+7f223e6bc000-7f223e6bd000 rw-p 00026000 08:01 2884094                    /lib/x86_64-linux-gnu/libpng12.so.0.50.0
+7f223e6bd000-7f223e761000 r-xp 00000000 08:01 3546858                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.11.1
+7f223e761000-7f223e960000 ---p 000a4000 08:01 3546858                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.11.1
+7f223e960000-7f223e966000 r--p 000a3000 08:01 3546858                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.11.1
+7f223e966000-7f223e967000 rw-p 000a9000 08:01 3546858                    /usr/lib/x86_64-linux-gnu/libfreetype.so.6.11.1
+7f223e967000-7f223e96e000 r-xp 00000000 08:01 2886791                    /lib/x86_64-linux-gnu/librt-2.19.so
+7f223e96e000-7f223eb6d000 ---p 00007000 08:01 2886791                    /lib/x86_64-linux-gnu/librt-2.19.so
+7f223eb6d000-7f223eb6e000 r--p 00006000 08:01 2886791                    /lib/x86_64-linux-gnu/librt-2.19.so
+7f223eb6e000-7f223eb6f000 rw-p 00007000 08:01 2886791                    /lib/x86_64-linux-gnu/librt-2.19.so
+7f223eb6f000-7f223ebab000 r-xp 00000000 08:01 3550037                    /usr/lib/x86_64-linux-gnu/libbluray.so.1.6.2
+7f223ebab000-7f223edab000 ---p 0003c000 08:01 3550037                    /usr/lib/x86_64-linux-gnu/libbluray.so.1.6.2
+7f223edab000-7f223edad000 r--p 0003c000 08:01 3550037                    /usr/lib/x86_64-linux-gnu/libbluray.so.1.6.2
+7f223edad000-7f223edae000 rw-p 0003e000 08:01 3550037                    /usr/lib/x86_64-linux-gnu/libbluray.so.1.6.2
+7f223edae000-7f223edb0000 r-xp 00000000 08:01 2886794                    /lib/x86_64-linux-gnu/libutil-2.19.so
+7f223edb0000-7f223efaf000 ---p 00002000 08:01 2886794                    /lib/x86_64-linux-gnu/libutil-2.19.so
+7f223efaf000-7f223efb0000 r--p 00001000 08:01 2886794                    /lib/x86_64-linux-gnu/libutil-2.19.so
+7f223efb0000-7f223efb1000 rw-p 00002000 08:01 2886794                    /lib/x86_64-linux-gnu/libutil-2.19.so
+7f223efb1000-7f223efbf000 r-xp 00000000 08:01 2883602                    /lib/x86_64-linux-gnu/libudev.so.1.5.0
+7f223efbf000-7f223f1be000 ---p 0000e000 08:01 2883602                    /lib/x86_64-linux-gnu/libudev.so.1.5.0
+7f223f1be000-7f223f1bf000 r--p 0000d000 08:01 2883602                    /lib/x86_64-linux-gnu/libudev.so.1.5.0
+7f223f1bf000-7f223f1c0000 rw-p 0000e000 08:01 2883602                    /lib/x86_64-linux-gnu/libudev.so.1.5.0
+7f223f1c0000-7f223f1f7000 r-xp 00000000 08:01 3804705                    /usr/lib/x86_64-linux-gnu/gvfs/libgvfscommon.so
+7f223f1f7000-7f223f3f6000 ---p 00037000 08:01 3804705                    /usr/lib/x86_64-linux-gnu/gvfs/libgvfscommon.so
+7f223f3f6000-7f223f3fc000 r--p 00036000 08:01 3804705                    /usr/lib/x86_64-linux-gnu/gvfs/libgvfscommon.so
+7f223f3fc000-7f223f3fd000 rw-p 0003c000 08:01 3804705                    /usr/lib/x86_64-linux-gnu/gvfs/libgvfscommon.so
+7f223f3fd000-7f223f42d000 r-xp 00000000 08:01 3804731                    /usr/lib/x86_64-linux-gnu/gio/modules/libgvfsdbus.so
+7f223f42d000-7f223f62d000 ---p 00030000 08:01 3804731                    /usr/lib/x86_64-linux-gnu/gio/modules/libgvfsdbus.so
+7f223f62d000-7f223f62e000 r--p 00030000 08:01 3804731                    /usr/lib/x86_64-linux-gnu/gio/modules/libgvfsdbus.so
+7f223f62e000-7f223f630000 rw-p 00031000 08:01 3804731                    /usr/lib/x86_64-linux-gnu/gio/modules/libgvfsdbus.so
+7f223f630000-7f223f730000 r-xp 00000000 08:01 2886780                    /lib/x86_64-linux-gnu/libm-2.19.so
+7f223f730000-7f223f92f000 ---p 00100000 08:01 2886780                    /lib/x86_64-linux-gnu/libm-2.19.so
+7f223f92f000-7f223f930000 r--p 000ff000 08:01 2886780                    /lib/x86_64-linux-gnu/libm-2.19.so
+7f223f930000-7f223f931000 rw-p 00100000 08:01 2886780                    /lib/x86_64-linux-gnu/libm-2.19.so
+7f223f931000-7f223f953000 r-xp 00000000 08:01 2883624                    /lib/x86_64-linux-gnu/liblzma.so.5.0.0
+7f223f953000-7f223fb52000 ---p 00022000 08:01 2883624                    /lib/x86_64-linux-gnu/liblzma.so.5.0.0
+7f223fb52000-7f223fb53000 r--p 00021000 08:01 2883624                    /lib/x86_64-linux-gnu/liblzma.so.5.0.0
+7f223fb53000-7f223fb54000 rw-p 00022000 08:01 2883624                    /lib/x86_64-linux-gnu/liblzma.so.5.0.0
+7f223fb54000-7f223fc17000 r-xp 00000000 08:01 3545886                    /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7f223fc17000-7f223fe16000 ---p 000c3000 08:01 3545886                    /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7f223fe16000-7f223fe1a000 r--p 000c2000 08:01 3545886                    /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7f223fe1a000-7f223fe1c000 rw-p 000c6000 08:01 3545886                    /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7f223fe1c000-7f223fe1d000 rw-p 00000000 00:00 0 
+7f223fe1d000-7f223fe38000 r-xp 00000000 08:01 3555885                    /usr/lib/libgupnp-dlna-2.0.so.3.0.0
+7f223fe38000-7f2240037000 ---p 0001b000 08:01 3555885                    /usr/lib/libgupnp-dlna-2.0.so.3.0.0
+7f2240037000-7f2240038000 r--p 0001a000 08:01 3555885                    /usr/lib/libgupnp-dlna-2.0.so.3.0.0
+7f2240038000-7f2240039000 rw-p 0001b000 08:01 3555885                    /usr/lib/libgupnp-dlna-2.0.so.3.0.0
+7f2240039000-7f2240061000 r-xp 00000000 08:01 3555873                    /usr/lib/libgupnp-av-1.0.so.2.0.0
+7f2240061000-7f2240261000 ---p 00028000 08:01 3555873                    /usr/lib/libgupnp-av-1.0.so.2.0.0
+7f2240261000-7f2240262000 r--p 00028000 08:01 3555873                    /usr/lib/libgupnp-av-1.0.so.2.0.0
+7f2240262000-7f2240263000 rw-p 00029000 08:01 3555873                    /usr/lib/libgupnp-av-1.0.so.2.0.0
+7f2240263000-7f2240264000 rw-p 00000000 00:00 0 
+7f2240264000-7f22402d0000 r-xp 00000000 08:01 2883630                    /lib/x86_64-linux-gnu/libpcre.so.3.13.1
+7f22402d0000-7f22404d0000 ---p 0006c000 08:01 2883630                    /lib/x86_64-linux-gnu/libpcre.so.3.13.1
+7f22404d0000-7f22404d1000 r--p 0006c000 08:01 2883630                    /lib/x86_64-linux-gnu/libpcre.so.3.13.1
+7f22404d1000-7f22404d2000 rw-p 0006d000 08:01 2883630                    /lib/x86_64-linux-gnu/libpcre.so.3.13.1
+7f22404d2000-7f22404d9000 r-xp 00000000 08:01 3543611                    /usr/lib/x86_64-linux-gnu/libffi.so.6.0.2
+7f22404d9000-7f22406d8000 ---p 00007000 08:01 3543611                    /usr/lib/x86_64-linux-gnu/libffi.so.6.0.2
+7f22406d8000-7f22406d9000 r--p 00006000 08:01 3543611                    /usr/lib/x86_64-linux-gnu/libffi.so.6.0.2
+7f22406d9000-7f22406da000 rw-p 00007000 08:01 3543611                    /usr/lib/x86_64-linux-gnu/libffi.so.6.0.2
+7f22406da000-7f22406de000 r-xp 00000000 08:01 2883693                    /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f22406de000-7f22408dd000 ---p 00004000 08:01 2883693                    /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f22408dd000-7f22408de000 r--p 00003000 08:01 2883693                    /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f22408de000-7f22408df000 rw-p 00004000 08:01 2883693                    /lib/x86_64-linux-gnu/libuuid.so.1.3.0
+7f22408df000-7f2240a3b000 r-xp 00000000 08:01 3545896                    /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.1
+7f2240a3b000-7f2240c3a000 ---p 0015c000 08:01 3545896                    /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.1
+7f2240c3a000-7f2240c43000 r--p 0015b000 08:01 3545896                    /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.1
+7f2240c43000-7f2240c45000 rw-p 00164000 08:01 3545896                    /usr/lib/x86_64-linux-gnu/libxml2.so.2.9.1
+7f2240c45000-7f2240c46000 rw-p 00000000 00:00 0 
+7f2240c46000-7f2240cf5000 r-xp 00000000 08:01 3547427                    /usr/lib/x86_64-linux-gnu/libsoup-2.4.so.1.7.0
+7f2240cf5000-7f2240ef4000 ---p 000af000 08:01 3547427                    /usr/lib/x86_64-linux-gnu/libsoup-2.4.so.1.7.0
+7f2240ef4000-7f2240ef7000 r--p 000ae000 08:01 3547427                    /usr/lib/x86_64-linux-gnu/libsoup-2.4.so.1.7.0
+7f2240ef7000-7f2240f12000 rw-p 000b1000 08:01 3547427                    /usr/lib/x86_64-linux-gnu/libsoup-2.4.so.1.7.0
+7f2240f12000-7f2240f21000 r-xp 00000000 08:01 3551076                    /usr/lib/libgssdp-1.0.so.3.0.0
+7f2240f21000-7f2241120000 ---p 0000f000 08:01 3551076                    /usr/lib/libgssdp-1.0.so.3.0.0
+7f2241120000-7f2241121000 r--p 0000e000 08:01 3551076                    /usr/lib/libgssdp-1.0.so.3.0.0
+7f2241121000-7f2241122000 rw-p 0000f000 08:01 3551076                    /usr/lib/libgssdp-1.0.so.3.0.0
+7f2241122000-7f2241125000 r-xp 00000000 08:01 2886779                    /lib/x86_64-linux-gnu/libdl-2.19.so
+7f2241125000-7f2241324000 ---p 00003000 08:01 2886779                    /lib/x86_64-linux-gnu/libdl-2.19.so
+7f2241324000-7f2241325000 r--p 00002000 08:01 2886779                    /lib/x86_64-linux-gnu/libdl-2.19.so
+7f2241325000-7f2241326000 rw-p 00003000 08:01 2886779                    /lib/x86_64-linux-gnu/libdl-2.19.so
+7f2241326000-7f224133a000 r-xp 00000000 08:01 2886790                    /lib/x86_64-linux-gnu/libresolv-2.19.so
+7f224133a000-7f2241539000 ---p 00014000 08:01 2886790                    /lib/x86_64-linux-gnu/libresolv-2.19.so
+7f2241539000-7f224153a000 r--p 00013000 08:01 2886790                    /lib/x86_64-linux-gnu/libresolv-2.19.so
+7f224153a000-7f224153b000 rw-p 00014000 08:01 2886790                    /lib/x86_64-linux-gnu/libresolv-2.19.so
+7f224153b000-7f224153d000 rw-p 00000000 00:00 0 
+7f224153d000-7f224155e000 r-xp 00000000 08:01 2883683                    /lib/x86_64-linux-gnu/libselinux.so.1
+7f224155e000-7f224175e000 ---p 00021000 08:01 2883683                    /lib/x86_64-linux-gnu/libselinux.so.1
+7f224175e000-7f224175f000 r--p 00021000 08:01 2883683                    /lib/x86_64-linux-gnu/libselinux.so.1
+7f224175f000-7f2241760000 rw-p 00022000 08:01 2883683                    /lib/x86_64-linux-gnu/libselinux.so.1
+7f2241760000-7f2241762000 rw-p 00000000 00:00 0 
+7f2241762000-7f224177c000 r-xp 00000000 08:01 2883684                    /lib/x86_64-linux-gnu/libz.so.1.2.8
+7f224177c000-7f224197b000 ---p 0001a000 08:01 2883684                    /lib/x86_64-linux-gnu/libz.so.1.2.8
+7f224197b000-7f224197c000 r--p 00019000 08:01 2883684                    /lib/x86_64-linux-gnu/libz.so.1.2.8
+7f224197c000-7f224197d000 rw-p 0001a000 08:01 2883684                    /lib/x86_64-linux-gnu/libz.so.1.2.8
+7f224197d000-7f2241b1e000 r-xp 00000000 08:01 2886776                    /lib/x86_64-linux-gnu/libc-2.19.so
+7f2241b1e000-7f2241d1e000 ---p 001a1000 08:01 2886776                    /lib/x86_64-linux-gnu/libc-2.19.so
+7f2241d1e000-7f2241d22000 r--p 001a1000 08:01 2886776                    /lib/x86_64-linux-gnu/libc-2.19.so
+7f2241d22000-7f2241d24000 rw-p 001a5000 08:01 2886776                    /lib/x86_64-linux-gnu/libc-2.19.so
+7f2241d24000-7f2241d28000 rw-p 00000000 00:00 0 
+7f2241d28000-7f2241d40000 r-xp 00000000 08:01 2886772                    /lib/x86_64-linux-gnu/libpthread-2.19.so
+7f2241d40000-7f2241f3f000 ---p 00018000 08:01 2886772                    /lib/x86_64-linux-gnu/libpthread-2.19.so
+7f2241f3f000-7f2241f40000 r--p 00017000 08:01 2886772                    /lib/x86_64-linux-gnu/libpthread-2.19.so
+7f2241f40000-7f2241f41000 rw-p 00018000 08:01 2886772                    /lib/x86_64-linux-gnu/libpthread-2.19.so
+7f2241f41000-7f2241f45000 rw-p 00000000 00:00 0 
+7f2241f45000-7f2241f5b000 r-xp 00000000 08:01 528994                     /usr/lib/x86_64-linux-gnu/dleyna-renderer/libdleyna-renderer-1.0.so.1.0.3
+7f2241f5b000-7f224215b000 ---p 00016000 08:01 528994                     /usr/lib/x86_64-linux-gnu/dleyna-renderer/libdleyna-renderer-1.0.so.1.0.3
+7f224215b000-7f224215c000 r--p 00016000 08:01 528994                     /usr/lib/x86_64-linux-gnu/dleyna-renderer/libdleyna-renderer-1.0.so.1.0.3
+7f224215c000-7f224215d000 rw-p 00017000 08:01 528994                     /usr/lib/x86_64-linux-gnu/dleyna-renderer/libdleyna-renderer-1.0.so.1.0.3
+7f224215d000-7f2242269000 r-xp 00000000 08:01 2884092                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.4200.1
+7f2242269000-7f2242469000 ---p 0010c000 08:01 2884092                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.4200.1
+7f2242469000-7f224246a000 r--p 0010c000 08:01 2884092                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.4200.1
+7f224246a000-7f224246b000 rw-p 0010d000 08:01 2884092                    /lib/x86_64-linux-gnu/libglib-2.0.so.0.4200.1
+7f224246b000-7f224246c000 rw-p 00000000 00:00 0 
+7f224246c000-7f22424bd000 r-xp 00000000 08:01 3546763                    /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4200.1
+7f22424bd000-7f22426bd000 ---p 00051000 08:01 3546763                    /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4200.1
+7f22426bd000-7f22426be000 r--p 00051000 08:01 3546763                    /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4200.1
+7f22426be000-7f22426bf000 rw-p 00052000 08:01 3546763                    /usr/lib/x86_64-linux-gnu/libgobject-2.0.so.0.4200.1
+7f22426bf000-7f22426ea000 r-xp 00000000 08:01 3551078                    /usr/lib/libgupnp-1.0.so.4.0.0
+7f22426ea000-7f22428e9000 ---p 0002b000 08:01 3551078                    /usr/lib/libgupnp-1.0.so.4.0.0
+7f22428e9000-7f22428ea000 r--p 0002a000 08:01 3551078                    /usr/lib/libgupnp-1.0.so.4.0.0
+7f22428ea000-7f22428eb000 rw-p 0002b000 08:01 3551078                    /usr/lib/libgupnp-1.0.so.4.0.0
+7f22428eb000-7f22428ec000 rw-p 00000000 00:00 0 
+7f22428ec000-7f22428ef000 r-xp 00000000 08:01 3546764                    /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.4200.1
+7f22428ef000-7f2242aee000 ---p 00003000 08:01 3546764                    /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.4200.1
+7f2242aee000-7f2242aef000 r--p 00002000 08:01 3546764                    /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.4200.1
+7f2242aef000-7f2242af0000 rw-p 00003000 08:01 3546764                    /usr/lib/x86_64-linux-gnu/libgmodule-2.0.so.0.4200.1
+7f2242af0000-7f2242c62000 r-xp 00000000 08:01 3546766                    /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4200.1
+7f2242c62000-7f2242e62000 ---p 00172000 08:01 3546766                    /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4200.1
+7f2242e62000-7f2242e66000 r--p 00172000 08:01 3546766                    /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4200.1
+7f2242e66000-7f2242e68000 rw-p 00176000 08:01 3546766                    /usr/lib/x86_64-linux-gnu/libgio-2.0.so.0.4200.1
+7f2242e68000-7f2242e6a000 rw-p 00000000 00:00 0 
+7f2242e6a000-7f2242e70000 r-xp 00000000 08:01 3551081                    /usr/lib/x86_64-linux-gnu/libdleyna-core-1.0.so.3.0.0
+7f2242e70000-7f2243070000 ---p 00006000 08:01 3551081                    /usr/lib/x86_64-linux-gnu/libdleyna-core-1.0.so.3.0.0
+7f2243070000-7f2243071000 r--p 00006000 08:01 3551081                    /usr/lib/x86_64-linux-gnu/libdleyna-core-1.0.so.3.0.0
+7f2243071000-7f2243072000 rw-p 00007000 08:01 3551081                    /usr/lib/x86_64-linux-gnu/libdleyna-core-1.0.so.3.0.0
+7f2243072000-7f2243092000 r-xp 00000000 08:01 2886773                    /lib/x86_64-linux-gnu/ld-2.19.so
+7f224326c000-7f2243278000 rw-p 00000000 00:00 0 
+7f2243289000-7f2243290000 r--s 00000000 08:01 3545395                    /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7f2243290000-7f2243292000 rw-p 00000000 00:00 0 
+7f2243292000-7f2243293000 r--p 00020000 08:01 2886773                    /lib/x86_64-linux-gnu/ld-2.19.so
+7f2243293000-7f2243294000 rw-p 00021000 08:01 2886773                    /lib/x86_64-linux-gnu/ld-2.19.so
+7f2243294000-7f2243295000 rw-p 00000000 00:00 0 
+7ffc512ac000-7ffc512cd000 rw-p 00000000 00:00 0                          [stack]
+7ffc51326000-7ffc51328000 r-xp 00000000 00:00 0                          [vdso]
+7ffc51328000-7ffc5132a000 r--p 00000000 00:00 0                          [vvar]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
